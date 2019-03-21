@@ -2,8 +2,11 @@
 
 <HEAD>
 
-<TITLE><Geotechnical Experiment</TITLE>
+<TITLE>Geotechnical Experiments</TITLE>
 <link rel="stylesheet" href="1/w3.css">
+
+    
+
 <style>
 .parallax1 {
   /* The image used */
@@ -33,10 +36,61 @@
   background-size: cover;
 }
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
 
 </style>
 
+
 </HEAD>
+
 
 <BODY>
 <a name="top"></a>
@@ -51,35 +105,41 @@
 <h3 class="w3-hide-small">Professor : Dr. K V Uday</h3>
 </div>
 </div>
-
-
-
 </div>
-<div class="w3-panel w3-leftbar w3-blue w3-xxlarge w3-serif">
 
-<H1>Exp-1. Liquid Limit Test of Soil by Casagrande Method(7 March, 2019)</H1></div>
+<div class="dropdown">
+    <button onclick="myFunction1()" class="dropbtn">Exp-1. Liquid Limit Test of Soil by Casagrande Method(7 March, 2019)</button>
+    <div id="myDropdown1" class="dropdown-content">
+     <center> <a href="apparatus.html">Apparatus</a>
+      <a href="theory.html">Theory</a>
+      <a href="procedure.html">Procedure</a>
+      <a href="observation.html">Observations</a>
+      <a href="result.html">Result</a></center>
+    </div>
+  </div>
+  <p>
+    <div class="dropdown">
+    <button onclick="myFunction2()" class="dropbtn">Exp-2. Liquid Limit Test of Soil using Cone Penetrometer Method(14 March, 2019)</button>
+    <div id="myDropdown2" class="dropdown-content">
+     <center> <a href="apparatus2.html">Apparatus</a>
+      <a href="theory2.html">Theory</a>
+      <a href="procedure2.html">Procedure</a>
+      <a href="observation2.html">Observations</a>
+      <a href="result2.html">Result</a></center>
+    </div>
+  </div>
+  <p>
+    <div class="dropdown">
+    <button onclick="myFunction3()" class="dropbtn">Exp-3. Sieve Analysis(21 March, 2019)</button>
+    <div id="myDropdown3" class="dropdown-content">
+     <center> <a href="apparatus3.html">Apparatus</a>
+      <a href="theory3.html">Theory</a>
+      <a href="procedure3.html">Procedure</a>
+      <a href="observation3.html">Observations</a>
+      <a href="result3.html">Result</a></center>
+    </div>
+  </div>
 
-<div class="w3-container">
-<H3 class="w3-animate-bottom">
-
-<ol type="1">
-<li><a href="apparatus.html" class="w3-button w3-white w3-border w3-border-grey">Apparatus  </a></li><br>
-<li><a href="theory.html" class="w3-button w3-white w3-border w3-border-grey">Theory       </a></li><br>
-<li><a href="procedure.html" class="w3-button w3-white w3-border w3-border-grey">Procedure    </a></li><br>
-<li><a href="observation.html" class="w3-button w3-white w3-border w3-border-grey">Observations</a></li><br>
-<li><a href="result.html" class="w3-button w3-white w3-border w3-border-grey">Result       </a></li></H3><br>
-</div></ol>
-<div class="w3-panel w3-leftbar w3-blue w3-xxlarge w3-serif"><H1>Exp-2. Liquid Limit Test of Soil using Cone Penetrometer Method(14 March, 2019)</H1></div>
-
-<div class="w3-container">
-<H3 class="w3-animate-bottom">
-<ol type="1">
-<li><a href="apparatus2.html" class="w3-button w3-white w3-border w3-border-grey">Apparatus    </a></li><br>
-<li><a href="theory2.html" class="w3-button w3-white w3-border w3-border-grey">Theory       </a></li><br>
-<li><a href="procedure2.html" class="w3-button w3-white w3-border w3-border-grey">Procedure    </a></li><br>
-<li><a href="observation2.html" class="w3-button w3-white w3-border w3-border-grey">Observations</a></li><br>
-<li><a href="result2.html" class="w3-button w3-white w3-border w3-border-grey">Result       </a></li></H3><br>
-</div></ol>
 <div class="parallax2">
  <div class=" w3-text-white" style="padding:30px 48px">
       <h1 class="w3-jumbo w3-hide-small ">More Experiments will be uploaded.</h1>
@@ -92,6 +152,47 @@
   <p>A website by Vikas Verma</p>
 </footer>
 
+
+
+
+<script>
+
+ /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+  //console.log(myFunction)
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+function myFunction2() {
+  //console.log(myFunction)
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+function myFunction3() {
+  //console.log(myFunction)
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  //console.log("on click")
+  if (!event.target.matches('.dropbtn')) {
+   // console.log("lol if ")
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
 </BODY>
+
+
 
 </HTML>
